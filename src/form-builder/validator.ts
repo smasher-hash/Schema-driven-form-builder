@@ -7,7 +7,7 @@ export async function validateField(
         return "This field is required";
     }
     if (field.validate) {
-        const result = field.validate(value, values);
+        field.validate(value, values);
     }
        
     return null;

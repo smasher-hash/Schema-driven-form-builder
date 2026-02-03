@@ -24,7 +24,7 @@ interface FormRendererProps {
     onChange: (id: string, value: any) => void;
 }
 
-export const FormRenderer: React.FC<FormRendererProps> = ({ schema, engine, values, errors, onChange }) => {
+export const FormRenderer: React.FC<FormRendererProps> = ({ schema,values, errors, onChange }) => {
     return (
         <form>
             {schema.map((field) => {
